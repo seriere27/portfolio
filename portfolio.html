@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+    <title>DAN · 视频作品集</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            background-color: #000000;
+            color: #f0f0f0;
+            font-family: system-ui, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+            line-height: 1.5;
+            padding: 2rem 1rem;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        header {
+            text-align: center;
+            margin-bottom: 3rem;
+            border-bottom: 1px solid #333;
+            padding-bottom: 1.5rem;
+        }
+        h1 {
+            font-size: 2.5rem;
+            font-weight: 500;
+            letter-spacing: -0.5px;
+            margin-bottom: 0.5rem;
+        }
+        .sub {
+            color: #aaa;
+            font-size: 0.95rem;
+        }
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+        }
+        .card {
+            background: #0a0a0a;
+            border: 1px solid #2a2a2a;
+            border-radius: 20px;
+            overflow: hidden;
+            transition: transform 0.2s ease, border-color 0.2s;
+        }
+        .card:hover {
+            border-color: #555;
+            transform: translateY(-4px);
+        }
+        .video-wrapper {
+            position: relative;
+            width: 100%;
+            padding-bottom: 56.25%;
+            background: #111;
+            border-bottom: 1px solid #2a2a2a;
+        }
+        .video-wrapper iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            border: 0;
+        }
+        .card-content {
+            padding: 1.2rem;
+        }
+        .card-title {
+            font-size: 1.3rem;
+            font-weight: 500;
+            margin-bottom: 0.4rem;
+            display: flex;
+            align-items: baseline;
+            gap: 8px;
+            flex-wrap: wrap;
+        }
+        .badge {
+            font-size: 0.7rem;
+            background: #1f1f1f;
+            padding: 2px 10px;
+            border-radius: 30px;
+            color: #ccc;
+            font-weight: normal;
+        }
+        .desc {
+            font-size: 0.85rem;
+            color: #aaa;
+            margin-top: 6px;
+            line-height: 1.4;
+        }
+        .footer-note {
+            margin-top: 3rem;
+            text-align: center;
+            font-size: 0.75rem;
+            color: #3a3a3a;
+            border-top: 1px solid #1a1a1a;
+            padding-top: 2rem;
+        }
+        @media (max-width: 640px) {
+            body { padding: 1rem; }
+            h1 { font-size: 1.8rem; }
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+    <header>
+        <h1>DAN ｜ 视频作品集</h1>
+        <div class="sub">摄影 · 剪辑 · 策划 · 脚本</div>
+    </header>
+
+    <div class="grid">
+        <!-- 1. 快剪视频 -->
+        <div class="card">
+            <div class="video-wrapper">
+                <iframe src="https://player.bilibili.com/player.html?isOutside=true&aid=116673440912494&bvid=BV1aEVd6yEpN&cid=38765201515&p=1" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true"></iframe>
+            </div>
+            <div class="card-content">
+                <div class="card-title">快剪视频 <span class="badge">剪辑</span></div>
+                <div class="desc">学校活动快剪 · 节奏感卡点剪辑 · 负责全流程剪辑与调色</div>
+            </div>
+        </div>
+
+        <!-- 2. 情景剧 -->
+        <div class="card">
+            <div class="video-wrapper">
+                <iframe src="https://player.bilibili.com/player.html?isOutside=true&aid=116673440914035&bvid=BV1aEVd6yEVw&cid=38765006599&p=1" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true"></iframe>
+            </div>
+            <div class="card-content">
+                <div class="card-title">情景剧 <span class="badge">拍摄+剪辑</span></div>
+                <div class="desc">省级一等奖 · 担任导演/摄影/剪辑 · 创意叙事</div>
+            </div>
+        </div>
+
+        <!-- 3. 宣传片 -->
+        <div class="card">
+            <div class="video-wrapper">
+                <iframe src="https://player.bilibili.com/player.html?isOutside=true&aid=116673440978806&bvid=BV1XEVd6yENT&cid=38764938649&p=1" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true"></iframe>
+            </div>
+            <div class="card-content">
+                <div class="card-title">宣传片 <span class="badge">拍摄+剪辑</span></div>
+                <div class="desc">短视频二等奖 · 学校官方宣传视频 · 无人机及部分地面拍摄及后期</div>
+            </div>
+        </div>
+
+        <!-- 4. 大广赛国奖作品 -->
+        <div class="card">
+            <div class="video-wrapper">
+                <iframe src="https://player.bilibili.com/player.html?isOutside=true&aid=116673440978028&bvid=BV1QEVd6yEQA&cid=38765462799&p=1" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true"></iframe>
+            </div>
+            <div class="card-content">
+                <div class="card-title">大广赛国奖作品 <span class="badge">脚本撰写+拍摄</span></div>
+                <div class="desc">第16届全国大学生广告艺术大赛全国优秀奖、陕西赛区三等奖 · 负责脚本撰写及全程拍摄</div>
+            </div>
+        </div>
+
+        <!-- 5. 营销号类视频 -->
+        <div class="card">
+            <div class="video-wrapper">
+                <iframe src="https://player.bilibili.com/player.html?isOutside=true&aid=116673440913254&bvid=BV1aEVd6yEit&cid=38765463082&p=1" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true"></iframe>
+            </div>
+            <div class="card-content">
+                <div class="card-title">营销号类视频 <span class="badge">脚本+文案+剪辑</span></div>
+                <div class="desc">负责脚本撰写、文案策划及全流程剪辑 · 熟悉新媒体传播逻辑与节奏把控</div>
+            </div>
+        </div>
+
+        <!-- 6. 工作总结 -->
+        <div class="card">
+            <div class="video-wrapper">
+                <iframe src="https://player.bilibili.com/player.html?isOutside=true&aid=116673440913265&bvid=BV1aEVd6yEiM&cid=38765071685&p=1" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true"></iframe>
+            </div>
+            <div class="card-content">
+                <div class="card-title">工作总结 <span class="badge">剪辑</span></div>
+                <div class="desc">国企单位工作总结视频 · 数据可视化+甲方所给素材 · 成片交付甲方</div>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer-note">
+        ⚡ 六个作品已嵌入B站视频 · 黑底白字极简风格
+    </div>
+</div>
+</body>
+</html>
